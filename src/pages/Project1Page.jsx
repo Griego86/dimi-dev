@@ -25,7 +25,7 @@ export default function Project1Page() {
     const newComment = { username, content };
     const res = await axios.post(`${DOMAIN}/api/comments`, newComment);
     if (res?.data.success) {
-      navigate("/dimi-react-portfolio/project1");
+      navigate("/dimi-dev/project1");
       setCommentContent("");
     } else {
       setMessage("THERE WAS AN ERROR POSTING YOUR COMMENT :(");

@@ -9,7 +9,7 @@ const LoginPage = () => {
 
   useEffect(() => {
     if (!!user) {
-      navigate("/dimi-react-portfolio");
+      navigate("/dimi-dev");
     }
   }, [user]);
 

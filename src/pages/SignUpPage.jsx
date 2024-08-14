@@ -20,7 +20,7 @@ const SignUpPage = () => {
     const res = await axios.post(`${DOMAIN}/api/users`, newUser);
 
     if (res?.data.success) {
-      navigate("/dimi-react-portfolio/login");
+      navigate("/dimi-dev/login");
       setMessage("Account created successfully!");
     } else {
       setMessage(res?.data.message);

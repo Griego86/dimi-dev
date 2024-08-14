@@ -13,7 +13,7 @@ export default function Header() {
       <div className="flex justify-between md:hidden">
         <NavLink
           className="py-2 px-2 text-lg font-bold"
-          to="/dimi-react-portfolio/"
+          to="/dimi-dev/"
         >
           <svg
             width="20px"
@@ -43,7 +43,7 @@ export default function Header() {
             <div className="md:flex">
               <li className="py-2">
                 <NavLink
-                  to="/dimi-react-portfolio/"
+                  to="/dimi-dev/"
                   onClick={() =>
                     window.innerWidth < 700 ? setShowHeader(false) : ""
                   }
@@ -54,7 +54,7 @@ export default function Header() {
               </li>
               <li className="py-2">
                 <NavLink
-                  to="/dimi-react-portfolio/projects"
+                  to="/dimi-dev/projects"
                   onClick={() =>
                     window.innerWidth < 700 ? setShowHeader(false) : ""
                   }
@@ -65,7 +65,7 @@ export default function Header() {
               </li>
               <li className="py-2">
                 <NavLink
-                  to="/dimi-react-portfolio/about"
+                  to="/dimi-dev/about"
                   onClick={() =>
                     window.innerWidth < 700 ? setShowHeader(false) : ""
                   }
@@ -76,7 +76,7 @@ export default function Header() {
               </li>
               <li className="py-2">
                 <NavLink
-                  to="/dimi-react-portfolio/contact"
+                  to="/dimi-dev/contact"
                   onClick={() =>
                     window.innerWidth < 700 ? setShowHeader(false) : ""
                   }
@@ -99,7 +99,7 @@ export default function Header() {
               <li className="py-2">
                 <NavLink
                   className="p-5"
-                  to="/dimi-react-portfolio/login"
+                  to="/dimi-dev/login"
                 >
                   {user?.username}
                 </NavLink>
@@ -107,7 +107,7 @@ export default function Header() {
               {!user && <li className="py-2">
                 <NavLink
                   className="p-5"
-                  to="/dimi-react-portfolio/login"
+                  to="/dimi-dev/login"
                 >
                   Login
                 </NavLink>
@@ -116,7 +116,7 @@ export default function Header() {
                 <NavLink
                   className="p-5"
                   onClick={logoutService}
-                  to="/dimi-react-portfolio/"
+                  to="/dimi-dev/"
                 >
                   Logout
                 </NavLink>
@@ -124,7 +124,7 @@ export default function Header() {
               {!user && <li className="py-2">
                 <NavLink
                   className="text-emerald-500 p-5"
-                  to="/dimi-react-portfolio/signup"
+                  to="/dimi-dev/signup"
                 >
                   Sign Up
                 </NavLink>

@@ -16,7 +16,7 @@ export default function Comment(props) {
       comment_id,
     });
     if (res?.data.success) {
-      navigate("/dimi-react-portfolio/project1");
+      navigate("/dimi-dev/project1");
     } else {
       setMessage("THERE WAS AN ERROR DELETING YOUR COMMENT :(");
     }
@@ -33,7 +33,7 @@ export default function Comment(props) {
     );
     if (res?.data.success) {
       setEditMode(false);
-      navigate("/dimi-react-portfolio/project1");
+      navigate("/dimi-dev/project1");
       setEditCommentContent("");
     } else {
       setMessage("THERE WAS AN ERROR EDITING YOUR COMMENT :(");
